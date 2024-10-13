@@ -1,0 +1,94 @@
+body {
+  height: 100%;
+}
+.white-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(50, 50, 50);
+}
+.black-mode {
+  background-color: rgb(0, 0, 0);
+  color: rgb(225, 225, 225);
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  position: relative;
+  height: 100%;
+  margin: 0px auto;
+  padding-top: 1px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  outline: darkgrey;
+}
+.btn {
+  margin-bottom: 8px;
+}
+.hidden {
+  display: none;
+}
+
+.note {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  color: #f89007;
+  opacity: 0.6;
+}
+
+.editor textarea {
+  width: 100%;
+  height: calc(100% - 210px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  line-height: 1.65;
+  font-size: 18pt;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  background: transparent;
+  opacity: 1;
+}
+.editor textarea:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.editor textarea.white-mode:focus {
+  background-color: rgb(255, 255, 255);
+  color: rgb(50, 50, 50);
+}
+.editor textarea.black-mode:focus {
+  background-color: rgb(0, 0, 0);
+  color: rgb(225, 225, 225);
+}
+
+.word-count {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 0.6;
+  font-size: 20px;
+}
+
+#fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.opacity {
+  opacity: 0.4;
+}
